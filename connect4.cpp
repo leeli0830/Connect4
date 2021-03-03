@@ -5,6 +5,8 @@ using namespace std;
 
 void printTable(char table[][7]);
 bool gameEnd(char table[][7]);
+void makeChange(char table[][7], int num);
+bool checkAvail(char table[][7], int num);
 
 int main()
 {
@@ -58,7 +60,7 @@ bool gameEnd(char table[][7])
     }
 
     // This look check vertical four in a row
-    for (int i = 0; i < 7; i++;)
+    for (int i = 0; i < 7; i++)
     {
         for (int j = 0; j < 3; j++)
         {
@@ -66,6 +68,26 @@ bool gameEnd(char table[][7])
             {
                 return 1;
             }
+        }
+    }
+
+    // Diagonal from up-left to down-right
+
+    // Diagonal from up-right to down-left
+}
+
+void makeChange(char table[][7], int num)
+{
+    if ()
+}
+
+int findPos(char table[][7], int num)
+{
+    for (int i = 0; i < 6; i++)
+    {
+        if (table[i][num] == ' ')
+        {
+            return true;
         }
     }
 }
